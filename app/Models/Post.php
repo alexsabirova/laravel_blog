@@ -22,6 +22,7 @@ class Post extends Model
     ];
 
     protected $withCount = ['likedUsers'];
+    protected $with = ['category'];
 
     public function category()
     {
